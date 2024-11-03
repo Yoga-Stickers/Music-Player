@@ -12,13 +12,13 @@ export default function Navbar({ songs, select }) {
         <div className='bg-black flex items-center justify-between p-2 pr-5 pl-5 w-full h-[10vh]'>
 
             <div className='w-28 h-full flex items-center'>
-                <img className='h-16' src="src\images\Guitar.png" alt="" />
+                <img className='h-16' src="src\components\images\Guitar.png" alt="" />
             </div>
 
             <div className='flex flex-col w-[35%] relative h-full items-center justify-end'>
                 <div className='w-full flex items-center p-1 h-full'>
                     <div className='m-2 h-full flex items-center justify-center w-12 bg-slate-800 rounded-3xl'>
-                        <img className='h-7 rounded-lg ' src="src\images\Home.png" alt="" />
+                        <img className='h-7 rounded-lg ' src="src\components\images\Home.png" alt="" />
                     </div>
                     <div className='w-[90%] active:border active:border-white flex items-center rounded-3xl bg-slate-800 h-full '>
                         <input
@@ -26,7 +26,7 @@ export default function Navbar({ songs, select }) {
                             value={search}
                             className='w-[83%] rounded-3xl active:border-none h-full placeholder:text-slate-400 pl-5 font-semibold bg-slate-800 ' placeholder='What do you want to play?' type="text" />
                         <hr className='w-8 rotate-90 text-red-600' />
-                        <img className='w-7' src="src\images\Search.png" alt="" />
+                        <img className='w-7' src="src\components\images\Search.png" alt="" />
                     </div>
                 </div>
                 {search == '' ? <></> : <div className='z-10 flex flex-col gap-2 pl-3 overflow-scroll p-0 overflow-y-visible h-[375px] absolute top-[74px] rounded-md w-[750px]'>
