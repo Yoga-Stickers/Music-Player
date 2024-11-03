@@ -25,7 +25,7 @@ export default function Library({ songs, setSongs, select }) {
     <div className='w-[25vw] h-full overflow-y-scroll rounded-lg p-1 bg-slate-950'>
       <div className='w-full h-[10%] text-lg text-slate-300 justify-between font-semibold flex items-center pl-3 pr-3 rounded-md'>
         <div className='flex gap-3'>
-          <img className='h-7 rounded-lg' src="src/components/images/Song.png" alt="" />
+          <img className='h-7 rounded-lg' src=".\public/images/Song.png" alt="" />
           <h1>Your Songs</h1>
         </div>
 
@@ -40,14 +40,14 @@ export default function Library({ songs, setSongs, select }) {
               className="hidden"
             />
             <label htmlFor="inpuu">
-              <img className='h-10 rounded-lg' src="src/components/images/Upload.png" alt="" />
+              <img className='h-10 rounded-lg' src=".\public/images/Upload.png" alt="" />
             </label>
           </div>
           <button
             onClick={clearSongs}
             className="rounded hover:bg-red-300"
           >
-            <img className='h-10 rounded-lg' src="src/components/images/Delete.png" alt="" />
+            <img className='h-10 rounded-lg' src=".\public/images/Delete.png" alt="" />
           </button>
         </div>
       </div>
