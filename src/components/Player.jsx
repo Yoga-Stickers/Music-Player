@@ -1,5 +1,6 @@
 import React from 'react';
 import Music from './Music';
+// import  Upload  from '../components/images/nature.svg';
 
 export default function Player({ songs, selected }) {
     return (

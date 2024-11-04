@@ -1,4 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
+import  Previous  from '../components/images/Previous.svg';
+import  Pause  from '../components/images/Pause.svg';
+import  Play2  from '../components/images/Play2.svg';
+import  Next  from '../components/images/Next.svg';
+import  Shuffle  from '../components/images/Shuffle.svg';
+import  Restart  from '../components/images/Restart.svg';
+
 
 export default function Music({ songs, selected }) {
     const audioRef = useRef();
@@ -101,21 +108,21 @@ export default function Music({ songs, selected }) {
 
                             <div className='flex w-full items-center justify-center'>
                                 <button onMouseEnter={preMusic} className="px-4 py-2 rounded-md">
-                                    <img className="h-16 rounded-lg transition-all -rotate-45 hover:rotate-0 duration-500" src="./public/images/Previous.svg" alt="Previous" />
+                                    <img className="h-16 rounded-lg transition-all -rotate-45 hover:rotate-0 duration-500" src={Previous} alt="Previous" />
                                 </button>
 
                                 {isPlaying ? (
                                     <button onClick={pauseMusic} className="px-4 py-2 rounded-md">
-                                        <img className="h-20 hover:h-24 rounded-lg transition-all duration-500" src="./public/images/Pause.svg" alt="Pause" />
+                                        <img className="h-20 hover:h-24 rounded-lg transition-all duration-500" src={Pause} alt="Pause" />
                                     </button>
                                 ) : (
                                     <button onClick={playMusic} className="px-4 py-2 rounded-md">
-                                        <img className="h-20 hover:h-24 rounded-lg transition-all duration-500" src="./public/images/Play2.svg" alt="Play" />
+                                        <img className="h-20 hover:h-24 rounded-lg transition-all duration-500" src={Play2} alt="Play" />
                                     </button>
                                 )}
 
                                 <button onMouseEnter={nxtMusic} className="px-4 py-2 rounded-md">
-                                    <img className="h-16 rounded-lg transition-all rotate-45 hover:rotate-0 duration-500" src="./public/images/Next.svg" alt="Next" />
+                                    <img className="h-16 rounded-lg transition-all rotate-45 hover:rotate-0 duration-500" src={Next} alt="Next" />
                                 </button>
                             </div>
 
@@ -140,11 +147,11 @@ export default function Music({ songs, selected }) {
                         <div className='flex flex-col rounded-xl w-[50%] items-center'>
                             <div className="flex rounded-xl items-center space-x-2 mt-4">
                                 <button onClick={shuffleMusic} className="px-4 py-2">
-                                    <img className="h-14 hover:h-16 rounded-lg hover:-rotate-180 transition-all duration-500" src="./public/images/Shuffle.svg" alt="Shuffle" />
+                                    <img className="h-14 hover:h-16 rounded-lg hover:-rotate-180 transition-all duration-500" src={Shuffle} alt="Shuffle" />
                                 </button>
 
                                 <button onClick={restartMusic} className="px-4 py-2">
-                                    <img className="h-14 hover:h-16 rounded-lg transition-all hover:rotate-180 duration-500" src="./public/images/Restart.svg" alt="Restart" />
+                                    <img className="h-14 hover:h-16 rounded-lg transition-all hover:rotate-180 duration-500" src={Restart} alt="Restart" />
                                 </button>
                             </div>
                             <div className="mt-4 ">
