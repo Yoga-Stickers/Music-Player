@@ -1,7 +1,7 @@
 import React from 'react';
-import  Song  from '../components/images/Song.svg';
-import  Upload  from '../components/images/Upload.svg';
-  import  Delete  from '../components/images/Delete.svg';
+import Song from '../components/images/Song.svg';
+import Upload from '../components/images/Upload.svg';
+import Delete from '../components/images/Delete.svg';
 
 export default function Library({ songs, setSongs, select }) {
   const handleFileUpload = (event) => {
@@ -25,8 +25,8 @@ export default function Library({ songs, setSongs, select }) {
   };
 
   return (
-    <div className='w-[25vw] h-full overflow-y-scroll rounded-lg p-1 bg-slate-950'>
-      <div className='w-full h-[10%] text-lg text-slate-300 justify-between font-semibold flex items-center pl-3 pr-3 rounded-md'>
+    <div className='lg:w-[25vw] lg:h-full sm:w-full sm:rounded-md sm:h-[75%] overflow-y-scroll rounded-lg bg-slate-950'>
+      <div className='w-full h-[10%] text-lg text-slate-300 justify-between font-semibold flex items-center pl-3 pr-3  rounded-md'>
         <div className='flex gap-3'>
           <img className='h-7 rounded-lg' src={Song} alt="" />
           <h1>Your Songs</h1>
@@ -55,8 +55,8 @@ export default function Library({ songs, setSongs, select }) {
         </div>
       </div>
 
-      <div className="mt-4 px-1">
-        <ul className="mt-2 flex flex-col gap-2 text-slate-300">
+      <div>
+        <ul className="mt-0 h-[90%] p-1 flex flex-col gap-2 text-slate-300 ">
           {songs.map((song, index) => (
             <li key={index} onClick={() => select(index)} className="cursor-pointer hover:scale-2 hover:bg-slate-800 hover:text-black duration-300 px-1 rounded-sm  py-1 text-md flex justify-between items-center">
               <span className="truncate max-w-[80%]">{song.name}</span> {/* Show the actual file name */}

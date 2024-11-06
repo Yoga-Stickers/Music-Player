@@ -20,7 +20,7 @@ export default function MusicApp({ songs, selected ,setSongs, select }) {
   }, [songs]);
 
   return (
-    <div className="bg-black flex gap-2 items-center justify-between text-white h-[90vh] p-1 w-full">
+    <div className="bg-black sm:flex-col flex gap-2 lg:h-[85vh] items-center justify-between text-white h-[90vh] p-1 w-full">
       <Library songs={songs} select={ select } setSongs={setSongs} />
       <Player selected={selected} songs={songs} />
     </div>
