@@ -13,7 +13,7 @@ export default function Navbar({ songs, select }) {
     // console.log(search);
 
     return (
-        <div className='bg-slate-600 flex items-center justify-center lg:h-[15vh] sm:h-[12vh] lg:pr-2 lg:pl-2 sm:pl-1 sm:pr-1 w-full'>
+        <div className='bg-red-300 flex items-center justify-center lg:h-[15vh] sm:h-[12vh] lg:pr-2 lg:pl-2 sm:pl-1 sm:pr-1 w-full'>
 
             <div className='h-full sm:pl-1 flex items-center '>
                 <img className='sm:h-14 sm:w-16 md:h-20 lg:w-24 cursor-pointer' src={guitar} alt="" />
@@ -28,7 +28,7 @@ export default function Navbar({ songs, select }) {
                             <img className='lg:h-7 sm:h-5 rounded-lg cursor-pointer' src={home_30} alt="" />
                         </div>
 
-                        <div className='w-[90%] lg:h-12 sm:h-10 border sm:pr-2 justify-around flex items-center rounded-md bg-slate-800'>
+                        <div className='w-[90%] lg:h-12 sm:h-10 lg:pr-2 sm:pr-2 justify-around flex items-center rounded-md bg-slate-800'>
                             <input
                                 onChange={(e) => setSearch(e.target.value)}
                                 value={search}
@@ -49,7 +49,7 @@ export default function Navbar({ songs, select }) {
                 </div>
 
                 <div className='lg:w-[15%] sm:w-[30%] flex flex-col lg:h-full sm:h-12 items-center rounded-md '>
-                    <img src={home_30} className=' bg-none lg:p-3 object-contain object-center  rounded-md lg:w-24 sm:size-9 flex sm:text-[7px] cursor-pointer justify-center items-center font-bold' />
+                    <img src={home_30} className=' bg-none lg:p-1  object-contain object-center rounded-md lg:w-14 sm:size-9 flex sm:text-[7px] cursor-pointer justify-center items-center font-bold' />
                     <h1 className='text-white rounded-3xl sm:text-sm font-sans font-semibold'>Shravankumar</h1>
                 </div>
 

@@ -43,7 +43,7 @@ export default function Library({ songs, setSongs, select }) {
               className="hidden"
             />
             <label htmlFor="inpuu">
-              <img className='h-10 rounded-lg' src={Upload} alt="" />
+              <img className='h-10 rounded-lg cursor-pointer' src={Upload} alt="" />
             </label>
           </div>
           <button

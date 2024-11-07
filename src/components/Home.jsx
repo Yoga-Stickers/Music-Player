@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import Library from './Library';
 import Player from './Player';
 
-export default function MusicApp({ songs, selected ,setSongs, select }) {
+export default function MusicApp({ songs, selected, setSongs, select }) {
   console.log(selected);
 
   useEffect(() => {
