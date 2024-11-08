@@ -50,7 +50,7 @@ export default function Navbar({ songs, select }) {
 
                 <div className='lg:w-[15%] sm:w-[30%] flex flex-col lg:h-full sm:h-12 items-center rounded-md '>
                     <img src={home_30} className=' bg-none lg:p-1  object-contain object-center rounded-md lg:w-14 sm:size-9 flex sm:text-[7px] cursor-pointer justify-center items-center font-bold' />
-                    <h1 className='text-white rounded-3xl sm:text-[20px] font-sans font-semibold'>Shravankumar</h1>
+                    <h1 className='text-white rounded-3xl sm:text-[10px] font-sans font-semibold'>Shravankumar</h1>
                 </div>
 
             </div>
