@@ -15,7 +15,7 @@ export default function Navbar({ songs, select }) {
     return (
         <div className='bg-red-300 flex items-center justify-center lg:h-[15vh] sm:h-[12vh] lg:pr-2 lg:pl-2 sm:pl-1 sm:pr-1 w-full'>
 
-            <div className='h-full sm:pl-1 flex items-center '>
+            <div className='h-full sm:pl-0 flex items-center '>
                 <img className='sm:h-14 sm:w-16 md:h-20 lg:w-24 cursor-pointer' src={guitar} alt="" />
             </div>
 
@@ -50,7 +50,7 @@ export default function Navbar({ songs, select }) {
 
                 <div className='lg:w-[15%] sm:w-[30%] flex flex-col lg:h-full sm:h-12 items-center rounded-md '>
                     <img src={home_30} className=' bg-none lg:p-1  object-contain object-center rounded-md lg:w-14 sm:size-9 flex sm:text-[7px] cursor-pointer justify-center items-center font-bold' />
-                    <h1 className='text-white rounded-3xl sm:text-sm font-sans font-semibold'>Shravankumar</h1>
+                    <h1 className='text-white rounded-3xl sm:text-[20px] font-sans font-semibold'>Shravankumar</h1>
                 </div>
 
             </div>
