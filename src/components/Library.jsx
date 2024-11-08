@@ -25,7 +25,7 @@ export default function Library({ songs, setSongs, select }) {
   };
 
   return (
-    <div className='lg:w-[25vw] lg:h-full sm:w-full sm:rounded-md sm:h-[75%] overflow-y-scroll rounded-lg bg-slate-950'>
+    <div className='lg:w-[35vw] lg:h-full sm:w-full sm:rounded-md sm:h-[75%] overflow-y-scroll rounded-lg bg-slate-950'>
       <div className='w-full h-[10%] text-lg text-slate-300 justify-between font-semibold flex items-center pl-3 pr-3  rounded-md'>
         <div className='flex gap-3'>
           <img className='h-7 rounded-lg' src={Song} alt="" />
@@ -48,7 +48,7 @@ export default function Library({ songs, setSongs, select }) {
           </div>
           <button
             onClick={clearSongs}
-            className="rounded hover:bg-red-300"
+            className="rounded lg:hover:bg-red-300"
           >
             <img className='h-10 rounded-lg' src={Delete} alt="" />
           </button>
@@ -66,7 +66,7 @@ export default function Library({ songs, setSongs, select }) {
                   setSongs(newSongs);
                   localStorage.setItem('songs', JSON.stringify(newSongs)); // Update local storage
                 }}
-                className="text-red-500 hover:font-extrabold text-md hover:text-sm hover:font-mono ml-2"
+                className="text-red-500 lg:hover:font-extrabold text-md lg:hover:text-sm lg:  hover:font-mono ml-2"
               >
                 Delete
               </button>
