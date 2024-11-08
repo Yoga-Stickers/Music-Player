@@ -99,12 +99,12 @@ export default function Music({ songs, selected }) {
     return (
         <div className="w-full sm:h-[25%] h-[55vh] bg-black sm:fixed bottom-1 rounded-md lg:p-3 lg:pr-6 sm:p-1 sm:pr-2 pl-6 sm:pl-2 ">
             {songs.length > 0 ? (
-                <div className='flex flex-col gap-5 sm:gap-1 '>
+                <div className='flex flex-col gap-5 sm:gap-1  justify-evenly sm:pb-1'>
                     <h2 className="text-xl sm:text-sm text-center font-semibold text-gray-300 lg:mt-3 sm:mt-0">{songs[currMusic].name}</h2>
                     <audio ref={audioRef} src={songs[currMusic].url} />
-                    <div className='flex items-center justify-between w-full'>
+                    <div className='flex items-center justify-evenly w-full'>
 
-                        <div className="flex w-[50%] flex-col items-center ">
+                        <div className="flex w-[48%] flex-col sm:h-28 items-center ">
 
                             <div className='flex w-full items-center justify-center '>
                                 <button onMouseEnter={preMusic} className="lg:px-4 lg:py-2 sm:py-0 sm:px-0 ">
@@ -126,7 +126,7 @@ export default function Music({ songs, selected }) {
                                 </button>
                             </div>
 
-                            <div className=" flex text-center flex-col w-72 sm:w-40 items-center">
+                            <div className=" flex text-center flex-col w-72 sm:w-36 items-center">
                                 <label className="text-md font-semibold font-mono text-white mb-1">Volume: {Math.floor(volume * 100)}%</label>
                                 <input
                                     type="range"
@@ -144,7 +144,7 @@ export default function Music({ songs, selected }) {
                         </div>
 
 
-                        <div className='flex flex-col w-[50%] items-center '>
+                        <div className='flex flex-col w-[48%] sm:h-28 items-center '>
                             <div className="flex items-center space-x-2 sm:space-x-0 mt-4 sm:mt-0">
                                 <button onClick={shuffleMusic} className="px-4 py-2">
                                     <img className="h-14 lg:hover:h-16 sm:h-12 rounded-lg lg:hover:-rotate-180 transition-all duration-500" src={Shuffle} alt="Shuffle" />
@@ -160,7 +160,7 @@ export default function Music({ songs, selected }) {
                                     value={progress}
                                     max={duration}
                                     onChange={handleScrub}
-                                    className="w-96 lg:hover:w-[500px] sm:w-48 h-1 lg:hover:h-6 lg:hover:p-1 duration-700 bg-slate-900 hover:bg-slate-600 rounded-[50px] appearance-none cursor-pointer"
+                                    className="w-96 lg:hover:w-[500px] sm:w-36 h-1 lg:hover:h-6 lg:hover:p-1 duration-700 bg-slate-900 hover:bg-slate-600 rounded-[50px] appearance-none cursor-pointer"
                                 />
                                 <div className="flex justify-between text-sm text-stone-200 font-mono mt-1">
                                     <span>{Math.floor(progress)} sec</span>
